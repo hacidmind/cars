@@ -16,7 +16,7 @@ const Cars = ({cars, deleteCar}) => {
     //     }
     // })
     const carList = cars.map(vehicle => {
-        return vehicle.year > 2016 ? (
+        return vehicle.year > 0 ? (
             <div className="car" key={vehicle.id}>
                 <div>Car Brand: {vehicle.brand}</div>
                 <div>Car Model: {vehicle.model}</div>
